@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/jpg" href="./image/apple-touch-icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script defer src="./scripts/app.js"></script>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="calculation_container">
+                <div class="numberDisplay">
+                    <div id="answerPanel" class="answerPanel"></div>
+                    <div id="questionPanel" class="questionPanel"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="numbers">
+                    <button class="ac">AC</button>
+                    <button class="clear">Del</button>
+                    <button class='percent' disabled id='operator'>%</button>
+                    <button id='numbers'>1</button>
+                    <button id='numbers'>2</button>
+                    <button id='numbers'>3</button>
+                    <button id='numbers'>4</button>
+                    <button id='numbers'>5</button>
+                    <button id='numbers'>6</button>
+                    <button id='numbers'>7</button>
+                    <button id='numbers'>8</button>
+                    <button id='numbers'>9</button>
+                    <button id='numbers' class="last">0</button>
+                    <button id='numbers' class="last dot">.</button>
+                </div>
+                <div class="operations">
+                    <button id='operator' disabled>+</button>
+                    <button id='operator' disabled> -</button>
+                    <button id='operator' disabled>/</button>
+                    <button id='operator' disabled>*</button>
+                    <button class="equal"> = </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff2883), to(#9900ff));
+  background-image: linear-gradient(-90deg, #ff2883, #9900ff);
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  place-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.container {
+  height: 550px;
+  width: 360px;
+  margin-top: 40px;
+}
+
+.main-container {
+  height: 560px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8%;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calculation_container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+}
+
+.calculation_container .numberDisplay {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.calculation_container .numberDisplay div {
+  margin-right: 55px;
+}
+
+.calculation_container .numberDisplay .questionPanel {
+  color: rgba(255, 242, 242, 0.89);
+  font-size: 1.5em;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.calculation_container .numberDisplay .answerPanel {
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 2.5em;
+  margin-bottom: 12px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 360px;
+  height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.buttons .numbers button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10%;
+  cursor: pointer;
+  margin: 10px 10px;
+  background-color: #5448c8;
+  color: #fdfdfd;
+}
+
+.buttons .numbers .percent {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.buttons .numbers .ac {
+  background-color: #fc0707f6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+}
+
+.buttons .numbers .clear {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #0004ff;
+  font-size: 14px;
+}
+
+.buttons .operations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.buttons .operations button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10%;
+  cursor: pointer;
+  margin: 9px 9px;
+  background-color: #ffffff;
+  color: black;
+}
+
+.buttons .operations button.equal {
+  background-color: #8b77ed;
+  color: #fdfdfd;
+}
+
+.last {
+  position: relative;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+
+.dot {
+  position: relative;
+  -webkit-transform: translateX(-48px);
+          transform: translateX(-48px);
+}
+/*# sourceMappingURL=main.css.map */
